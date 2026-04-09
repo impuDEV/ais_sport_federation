@@ -1,0 +1,20 @@
+.MainPage{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+}
+
+.MainPage.mobile {
+	font-size: var(--font-s);
+}
+
+.title {
+	text-align: center;
+}
+
+.bold {
+	color: var(--primary-color);
+}
+
+
