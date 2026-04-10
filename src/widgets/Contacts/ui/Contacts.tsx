@@ -55,7 +55,7 @@ export const Contacts = memo((props: ContactsProps) => {
 						<VStack align="start">
 							<Text text="680510, Хабаровский край," size={textSize} />
 							<Text text="с. Тополево," size={textSize} />
-							<Text text="ул. Пионерская, д.2, кв,18" size={textSize} />
+							<Text text="ул. Пионерская, д.2-18" size={textSize} />
 						</VStack>
 					</HStack>
 					<YandexMap width={350}/>
