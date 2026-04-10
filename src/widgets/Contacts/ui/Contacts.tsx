@@ -49,24 +49,26 @@ export const Contacts = memo((props: ContactsProps) => {
 				</HStack>
 			}
 			{isMobile &&
-				<VStack align="center" gap="16" >
-					<HStack gap="16">
-						<Icon Svg={geo}/>
-						<VStack align="start">
-							<Text text="680510, Хабаровский край," size={textSize} />
-							<Text text="с. Тополево," size={textSize} />
-							<Text text="ул. Пионерская, д.2-18" size={textSize} />
-						</VStack>
-					</HStack>
+				<VStack align="center" gap="8">
+					<VStack align="start" gap="8" >
+						<HStack gap="16">
+							<Icon Svg={phone}/>
+							<Text text="+7(924)317-24-03" size={textSize} />
+						</HStack>
+						<HStack gap="8">
+							<Icon Svg={email}/>
+							<Text text="RFTVSHK@mail.ru" size={textSize} />
+						</HStack>
+						<HStack gap="16">
+							<Icon Svg={geo}/>
+							<VStack align="start">
+								<Text text="680510, Хабаровский край," size={textSize} />
+								<Text text="с. Тополево," size={textSize} />
+								<Text text="ул. Пионерская, д.2-18" size={textSize} />
+							</VStack>
+						</HStack>
+					</VStack>
 					<YandexMap width={350}/>
-					<HStack gap="16">
-						<Icon Svg={phone}/>
-						<Text text="+7(924)317-24-03" size={textSize} />
-					</HStack>
-					<HStack gap="8">
-						<Icon Svg={email}/>
-						<Text text="RFTVSHK@mail.ru" size={textSize} />
-					</HStack>
 				</VStack>
 			}
 		</Container>
